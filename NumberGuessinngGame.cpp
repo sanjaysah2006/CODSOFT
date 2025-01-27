@@ -4,8 +4,8 @@
 using namespace std;
 int main(){
     srand(time(0));
-
-    int RandomNumber = rand() % 10 + 1;
+    int RandomNumber = rand() % 20 + 1; 
+    cout<<"Guess the Number between 1-20."<<endl;
     int GuessNumber , Count = 0 ;
      do{
         cout << "Guess the number : ";
@@ -18,7 +18,4 @@ int main(){
      }
      while(GuessNumber != RandomNumber);
 return 0;
-     
-    
-
 }
