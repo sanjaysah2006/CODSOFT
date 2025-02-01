@@ -4,8 +4,11 @@
 using namespace std;
 int main(){
     srand(time(0));
-    int RandomNumber = rand() % 20 + 1; 
-    cout<<"Guess the Number between 1-20."<<endl;
+    int l,h;
+    cout << "Enter Range for guessing number (low high): ";
+    cin>>l>>h;
+    int RandomNumber = rand() % (h - l + 1) + l;
+    cout << "Guess the number between " << l << " and " << h << ": \n";
     int GuessNumber , Count = 0 ;
      do{
         cout << "Guess the number : ";
